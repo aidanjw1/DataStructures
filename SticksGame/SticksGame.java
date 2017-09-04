@@ -18,33 +18,33 @@ import java.util.Scanner;
 
 public class SticksGame
 {
-   // Variable print to turn off print statements while training AI
-   static boolean print = true; 
+    // Variable print to turn off print statements while training AI
+    static boolean print = true;
 
    
-   // playGameOnce
-   // Play the game of sticks once:
-   // Game starts, players take turns taking 1-3 sticks until none remain
-   // Takes two Player objects and the total number of beginning sitcks as parameters 
-   public static void playGameOnce(Player player1, Player player2, int totalSticks)
-   {
-		 player1.startGame();
-		 player2.startGame();
-       boolean win = false;
-		 // Players take turns making moves until 0 sticks left
-       while (totalSticks > 0)
-		   {
+    // playGameOnce
+    // Play the game of sticks once:
+    // Game starts, players take turns taking 1-3 sticks until none remain
+    // Takes two Player objects and the total number of beginning sitcks as parameters
+    public static void playGameOnce(Player player1, Player player2, int totalSticks)
+    {
+        player1.startGame();
+        player2.startGame();
+        boolean win = false;
+        // Players take turns making moves until 0 sticks left
+        while (totalSticks > 0)
+		    {
 			   totalSticks = player1.move(totalSticks);
 			   if (totalSticks == 0)
 			   {
 				   win =	true;
-					break;
+				   break;
 			   }
 			   totalSticks = player2.move(totalSticks);
-         }
-		   player1.endGame(win);
-		   win = !win;
-		   player2.endGame(win);
+		    }
+        player1.endGame(win);
+        win = !win;
+        player2.endGame(win);
     }
    
    
