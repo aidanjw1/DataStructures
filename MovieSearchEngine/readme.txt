@@ -2,7 +2,7 @@
 however it can be downloaded using this link so that the program
 can be run:
 
-    https://drive.google.com/file/d/0B0YWssev75b9ckg5MVJQTktTaDA/view?usp=sharing
+    http://aidanjwhite.com/res/plotunsorted.list.zip
 
 
 This project is an implementation of a binary search tree which allows
